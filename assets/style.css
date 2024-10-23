@@ -30,7 +30,7 @@ body{
     max-width: 500px;
     background: rgba(255, 255, 255, .02);
     backdrop-filter: blur(10px);
-    padding: 30px;
+    padding: 20px;
     border-radius: 1rem;
     box-shadow: 8px 8px 5px 3px rgba(0, 0, 0, .2);
 }
