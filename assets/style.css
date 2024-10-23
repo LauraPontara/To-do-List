@@ -1,0 +1,180 @@
+/* Importa a fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Remove a margem e o padding padrão de todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização básica do body */
+body{
+    font-family: "Poppins", sans-serif;
+    background-image: url('img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 0px 20px;
+}
+
+/* Container principal da página */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 60px auto 30px auto;
+    max-width: 500px;
+    background: rgba(255, 255, 255, .02);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 1rem;
+    box-shadow: 8px 8px 5px 3px rgba(0, 0, 0, .2);
+}
+
+/* Seção com barra de progresso e contador */
+.status-container{
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #d8c0ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    height: 200px;
+}
+
+/* Detalhes da seção */
+.detalhes{
+width: 100%;
+margin: 30px 0;
+font-size: 14px;
+}
+
+/* Estiliza o círculo que mostra as tarefas completadas */
+.fracao{
+    margin: 30px 0;
+}
+
+/* Estilo da barra de progresso */
+#barraProgresso{
+    width: 100%;
+    height: 10px;
+    background-color: #171c48;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Parte preenchida da barra de progresso */
+#progresso{
+    width: 0%; /* Inicialmente, nenhum progresso */
+    height: 10px;
+    background-color: aqua;
+    border-radius: 10px;
+    transition: all 0.3s ease; /* Suaviza a animação de progresso */
+}
+
+/* Estilo do número de tarefas completadas/totais */
+#numeros{
+    width: 100px;
+    height: 100px;
+    background-color: #828dff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Estilo do formulário para adicionar tarefas */
+form{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+/* Estilo do campo de entrada de texto */
+input{
+    flex: 1;
+    padding: 16px;
+    background-color: #171c48;
+    border: 1.7px solid #828dff;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+
+    
+}
+
+/* Estilo do botão de adicionar tarefa */
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #828dff;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+}
+
+/* Estilo da lista de tarefas */
+#liTarefas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    width: 100%;
+    list-style: none;
+}
+
+/* Estilo de cada item da lista */
+.itemLista{
+    display: flex;
+    background-color: #171c48;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilo de cada tarefa */
+.tarefa{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Estilo da caixa de seleção da tarefa */
+.tarefa input{
+    width: 20px;
+    height: 20px;
+    margin-left: 7px;
+}
+
+/* Tarefas completadas com texto riscado */
+.tarefa.completed{
+    text-decoration: line-through;
+    color: aqua;
+}
+
+/* Estilo do ícone da lixeira */
+.itemLista img{
+    width: 24px;
+    height: 24px;
+    margin: 0px;
+    margin-right: 7px;
+    margin-top: 5px;
+    cursor: pointer; /* Aponta que o ícone é clicável */
+}
+

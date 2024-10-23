@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <!-- Container principal da página -->
+    <div class="container">
+
+        <!-- Seção que contgiém a barra de progresso e o contador -->
+        <div class="status-container">
+            <div class="detalhes">
+                <!-- Título da lista -->
+                <h1>Lista de Tarefas</h1>
+
+                <!-- Barra de progresso para tarefas completadas -->
+                <div id="barraProgresso">
+                    <div id="progresso"></div>
+                </div>
+            </div>
+
+            <!-- Contador que exibe o número de tarefas concluídas / totais -->
+            <div class="fracao">
+                <p id="numeros">0 / 0</p>
+            </div>
+        </div>
+
+        <!-- Formulário para adicionar novas tarefas -->
+        <form action="">
+            <!-- Campo de texto para adicionar uma tarefa -->
+            <input type="text" id="tarefaInput" placeholder="Adicionar tarefa">
+            <!-- Botão para adicionar a tarefa -->
+            <button id="btnAdicionar" type="submit">+</button>
+        </form>
+
+        <!-- Lista onde as tarefas serão exibidas -->
+        <ul id="liTarefas"></ul>
+    </div>
+    <script src="app.js"></script>
+    <!-- Biblioteca externa para gerar animações de confetes -->
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+
+</html>
